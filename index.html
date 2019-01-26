@@ -1,89 +1,100 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Homepage</title>
-        <meta charset="utf-8">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+                <title>
+            PHOTU: A Photography Blog
+        </title>
         <script src="jquery-3.3.1.js"></script>
         <script>
             $(document).ready(function(){
+                var b;
                 $(window).scroll(function(){
-                    var up = $(document).scrollTop();
-                    var upperl = 10;
-                    var lowerl = 500;
-                    var a = 0;
-                    var b = $("#body1").width();
-                    if(up <= upperl)
-                    { 
-                       a=b; 
-                    }
-                    else if(up>=upperl)
+                    var a=$(window).scrollTop();
+                    if(a>10)
                     {
-                        a=b+up;
+                        $(".navbar").addClass("navbar1");
+                        
                     }
-                    
-
-                    $("#backgroundslide").css("background-size","200px auto," +a+"px");
-                    console.log(a);
-                   
-                     });
-                     });
-            </script>
+                    else if(a<20)
+                    {
+                        $(".navbar").removeClass("navbar1");
+                    }
+                })
+            })
+        </script>
         <style>
-            body{
-                color:white;
-                top:0;
-            margin:0;
-            }
-            #body1{
-                width:100%;
-                height:880px;
-               position:relative;
-            }
-        #backgroundslide{
-            background-image:url("b.png"),url("a.jpg");
+          
+
+        .navbar{
+            font-size:1em;
+            padding:1rem;
             
-            width:100%;
-            height:100%;
+            border-bottom:0;
+            transition: background-color 2s ease;
+            background-color:rgba(0,0,0,0);
+        }
+        .navbar1{
+            transition: background-color 4s ease;
+  
+            background-color:rgba(0, 0, 0, 1);
             
-  background-size: 200px,cover;
-  background-repeat:no-repeat;
-  background-position: bottom,top;
         }
-        #a{
-            margin-top:100px;
+        .slide1{
+            background-image:url(Resources/Images/yoda.jpg);
+            background-attachment:fixed;
+            background-position:center; 
+            background-size:cover;
+            height:800px;
+            overflow:hidden;
         }
+        .slide2{
+            background-image:url(Resources/Images/Vader.jpg);
+            background-attachment:fixed;
+            background-position:center;
+            background-size:cover;
+            height:800px;
+            overflow:hidden;
+        }
+        .leftfoot{
+            text-align:left;
+        }
+        .rightfoot{
+            text-align:right;
+            padding-top:20px;
+        }
+        
+
         </style>
     </head>
     <body>
-        <div id="body1">
-        <div id="backgroundslide">
-           
-            <h1>This is Heading</h1>
-           
-            <p id="a">Irure pariatur et est ullamco fugiat ut. Duis incididunt sint non nostrud ut enim irure veniam. Veniam veniam cillum Lorem adipisicing laboris id esse ullamco deserunt. Incididunt duis adipisicing anim sit nisi qui magna nisi nulla.</p>
-        </div>
-    </div>
-    xfdkjgklfdglsdf
-    dfgsdfgsdfg<br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    dfgsdfgsdfg<br>asdasd
-    <br>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#" style="font-size:2em;">PHOTU</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="slide1">
+              <div class="jumbotron" style="margin-top:40em; background-color:rgba(255, 255, 255, 0.322);">
+                  <h2>The Photography Blog</h2>
+                  <p>Ye Website Mananiya Abhishek Kashyap dwara khichi gayi tasviron ke pradarshan ke liye hai</p>
+              </div>
 
-    safasf
-    <br>
+          </div>
+          <div class="slide2">
+                <div class="jumbotron" style="margin-top:43em; background-color:rgba(255, 255, 255, 0.322);">
+                    <h2>Baaki content Mananiya Abhishek ji Likhenge</h2>
+                    <p>Mananiya Abhishek Dwara likha gaye  anuched aayenge </p>
+                </div>
+  
+            </div>
+            
     </body>
 </html>
