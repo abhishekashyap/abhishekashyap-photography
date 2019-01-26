@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+                <title>
+            PHOTU: A Photography Blog
+        </title>
+        <script src="jquery-3.3.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                var b;
+                $(window).scroll(function(){
+                    var a=$(window).scrollTop();
+                    if(a>10)
+                    {
+                        $(".navbar").addClass("navbar1");
+                        
+                    }
+                    else if(a<20)
+                    {
+                        $(".navbar").removeClass("navbar1");
+                    }
+                })
+            })
+        </script>
+        <style>
+          
+
+        .navbar{
+            font-size:1em;
+            padding:1rem;
+            
+            border-bottom:0;
+            transition: background-color 2s ease;
+            background-color:rgba(0,0,0,0);
+        }
+        .navbar1{
+            transition: background-color 4s ease;
+  
+            background-color:rgba(0, 0, 0, 1);
+            
+        }
+        .slide1{
+            background-image:url(Resources/Images/yoda.jpg);
+            background-attachment:fixed;
+            background-position:center; 
+            background-size:cover;
+            height:800px;
+            overflow:hidden;
+        }
+        .slide2{
+            background-image:url(Resources/Images/Vader.jpg);
+            background-attachment:fixed;
+            background-position:center;
+            background-size:cover;
+            height:800px;
+            overflow:hidden;
+        }
+        .leftfoot{
+            text-align:left;
+        }
+        .rightfoot{
+            text-align:right;
+            padding-top:20px;
+        }
+        
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#" style="font-size:2em;">PHOTU</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="slide1">
+              <div class="jumbotron" style="margin-top:40em; background-color:rgba(255, 255, 255, 0.322);">
+                  <h2>The Photography Blog</h2>
+                  <p>Ye Website Mananiya Abhishek Kashyap dwara khichi gayi tasviron ke pradarshan ke liye hai</p>
+              </div>
+
+          </div>
+          <div class="slide2">
+                <div class="jumbotron" style="margin-top:43em; background-color:rgba(255, 255, 255, 0.322);">
+                    <h2>Baaki content Mananiya Abhishek ji Likhenge</h2>
+                    <p>Mananiya Abhishek Dwara likha gaye  anuched aayenge </p>
+                </div>
+  
+            </div>
+            
+    </body>
+</html>
