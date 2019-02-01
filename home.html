@@ -6,86 +6,59 @@
             PHOTU: A Photography Blog
         </title>
         
+
+        <!--CSS-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link rel="stylesheet" href="css/tilt.css">
         <link rel="stylesheet" type="text/css" href="css/home.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-        
 
-        <script>
-            $(document).ready(function(){
-
-              // Add smooth scrolling to all links
-              $("a").on('click', function(event) {
-            
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                  // Prevent default anchor click behavior
-                  event.preventDefault();
-            
-                  // Store hash
-                  var hash = this.hash;
-
-                  $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                  }, 800, function(){
-               
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                  });
-                } // End if
-              });
-            });
-            </script>
     </head>
 
     <body>
-        
-      <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-          
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#" style="font-size:2em;">PHOTU</a>
-          </div>
-
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
-          </ul>
-        </div>
-      </nav> -->
-
 
       <div class="slide1">
+
         <img class="diamonds" src="resources/icons/diamonds_main.svg">
         <img class="diamonds" src="resources/icons/diamonds_upper.svg">
         <img class="diamonds" src="resources/icons/diamonds_lower.svg">
-        
-
 
         <a href="#slide2"><img class="downarrow" src="Resources/icons/arrow-down-sign-to-navigate.svg"> </a>
 
       </div>
 
+
+
       <div id="slide2" class="slide2">
 
         <!-- TILT CODE STARTS -->
+        <br>
 
-        <div class="flex-container" class="tiltdivs">
+        <div class="dabba" class="box1">
           <a data-tilt data-tilt-glare="true" data-tilt-transition="true"  data-tilt-scale="1.1" class="c-logo" href=" " title="Tilt.js demo ">
-            <span>Home</span>
+            <span>Architecture</span>
           </a> 
         </div>
-            
-        <div class="flex-container" class="tiltdivs">
+
+            <br>
+
+        <div class="dabba" class="box2">
           <a data-tilt data-tilt-glare="true" data-tilt-transition="true"  data-tilt-scale="1.1" class="c-logo" href=" " title="Tilt.js demo ">
-            <span>Home</span>
+            <span>Macro</span>
           </a> 
         </div> 
-            
-        <div class="flex-container" class="tiltdivs">
+
+          <br>
+
+        <div class="dabba" class="box3">
+          <a data-tilt data-tilt-glare="true" data-tilt-transition="true"  data-tilt-scale="1.1" class="c-logo" href=" " title="Tilt.js demo ">
+            <span>Landscape</span>
+          </a> 
+        </div>
+        
+        <br>
+        
+        <div class="dabba" class="box4">
           <a data-tilt data-tilt-glare="true" data-tilt-transition="true"  data-tilt-scale="1.1" class="c-logo" href=" " title="Tilt.js demo ">
             <span><img src="/Users/abhishekashyap/Documents/WT Project/images/Gardening.jpg" height="300px" width="300px"></span>
           </a> 
@@ -97,9 +70,10 @@
                 
       </div>
 
-
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+      <!--SCRIPTS-->
         <script src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+        <!-- <script src="js/smoothscroll.js"></script> -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
         <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/vanilla-tilt.min.js'></script>
             
     </body>

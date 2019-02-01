@@ -1,17 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
 
-.navbar{
-    font-size:1em;
-    padding:1rem;
-    
-    border-bottom:0;
-    
-}
-.navbar1{
-    transition: background-color 2s ease;
-
-    background-color:rgba(0, 0, 0, 1);
-    
-}
 .slide1{
     background-image:url(../resources/images/IMG_8472.jpg);
     background-attachment:fixed;
@@ -29,13 +19,13 @@
     height:800px;
     overflow:hidden;
 }
-.leftfoot{
+/* .leftfoot{
     text-align:left;
 }
 .rightfoot{
     text-align:right;
     padding-top:20px;
-}
+} */
 
 @keyframes bouncing {
     0% {bottom: 100px;}
@@ -64,6 +54,6 @@
     position: absolute;
 }
 
-.tiltdivs{
-    
+.dabba{
+    float: right;
 }
