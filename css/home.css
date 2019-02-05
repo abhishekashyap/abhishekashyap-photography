@@ -57,3 +57,18 @@ html {
 .dabba{
     float: right;
 }
+
+
+
+#diamonds{
+    content: url("../Resources/icons/diamonds_main.svg")
+}
+
+#insta{
+    content:url("../Resources/icons/diamonds_upper_insta_white.svg");
+}
+
+#fb{
+    content:url("../Resources/icons/diamonds_lower_fb_white.svg");
+}
+

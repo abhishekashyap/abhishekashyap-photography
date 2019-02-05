@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 600 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(0.29496,-0.300197,0.300197,0.29496,196.266,143.008)">
+        <path d="M429.899,327.161C429.899,318.613 422.959,311.673 414.412,311.673L135.634,311.673C127.086,311.673 120.146,318.613 120.146,327.161L120.146,605.939C120.146,614.487 127.086,621.426 135.634,621.426L414.412,621.426C422.959,621.426 429.899,614.487 429.899,605.939L429.899,327.161Z" style="fill:rgb(0,53,255);fill-opacity:0;stroke:white;stroke-width:23.76px;"/>
+    </g>
+    <g transform="matrix(0.0981113,0,0,0.10839,390.661,165.953)">
+        <path d="M386.878,0L164.156,0C73.64,0 0,73.64 0,164.156L0,386.878C0,477.394 73.64,551.034 164.156,551.034L386.878,551.034C477.394,551.034 551.034,477.394 551.034,386.878L551.034,164.156C551.033,73.64 477.393,0 386.878,0ZM495.6,386.878C495.6,446.923 446.923,495.6 386.878,495.6L164.156,495.6C104.111,495.6 55.434,446.923 55.434,386.878L55.434,164.156C55.434,104.11 104.111,55.434 164.156,55.434L386.878,55.434C446.923,55.434 495.6,104.11 495.6,164.156L495.6,386.878Z" style="fill:white;fill-rule:nonzero;stroke:white;stroke-width:1px;stroke-linecap:butt;stroke-miterlimit:1.41421;"/>
+        <path d="M275.517,133C196.933,133 133,196.933 133,275.516C133,354.099 196.933,418.033 275.517,418.033C354.101,418.033 418.034,354.1 418.034,275.516C418.034,196.932 354.101,133 275.517,133ZM275.517,362.6C227.422,362.6 188.434,323.612 188.434,275.517C188.434,227.422 227.423,188.434 275.517,188.434C323.612,188.434 362.6,227.422 362.6,275.517C362.6,323.611 323.611,362.6 275.517,362.6Z" style="fill:white;fill-rule:nonzero;stroke:white;stroke-width:1px;stroke-linecap:butt;stroke-miterlimit:1.41421;"/>
+        <circle cx="418.31" cy="134.07" r="34.15" style="fill:white;stroke:white;stroke-width:1px;stroke-linecap:butt;stroke-miterlimit:1.41421;"/>
+    </g>
+</svg>
