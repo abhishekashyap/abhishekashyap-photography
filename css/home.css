@@ -59,16 +59,37 @@ html {
 }
 
 
-
-#diamonds{
-    content: url("../Resources/icons/diamonds_main.svg")
+.top-btn{
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    border: 5px solid white;
+    /* filter: blur(2px); */
+    transition: ease-in-out 0.3s;
+    
 }
 
-#insta{
-    content:url("../Resources/icons/diamonds_upper_insta_white.svg");
+.top-btn:hover{
+    color: black;
+    background: white;
+    filter: none;
 }
 
-#fb{
-    content:url("../Resources/icons/diamonds_lower_fb_white.svg");
+.btn-span{
+    float: right;
+    padding: 20px;
 }
 
+#insta,#fb{
+    -webkit-filter: blur(20) ;
+    filter: blur(20);
+}
+#insta:hover{
+    -webkit-filter: blur(20) ;
+    filter: invert();
+}
+
+#fb:hover{
+    -webkit-filter: blur(20) ;
+    filter: invert();
+}
