@@ -2,32 +2,34 @@ html {
     scroll-behavior: smooth;
 }
 
+/* 
 #loading {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    display: block;
-    opacity: 0.7;
-    background-color: #fff;
-    z-index: 99;
-    text-align: center;
- }
- 
- #loading-image {
-   position: absolute;
-   top: 100px;
-   left: 240px;
-   z-index: 100;
- }
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: fixed;
+   display: block;
+   opacity: 0.7;
+   background-color: #fff;
+   z-index: 99;
+   text-align: center;
+}
+
+#loading-image {
+  position: absolute;
+  top: 100px;
+  left: 240px;
+  z-index: 100;
+} */
+
 
 .slide1 {
     background-image: url(../resources/images/IMG_8472.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 800px;
+    height: 800px; /*sabse bada chutiyapa*/
     overflow: hidden;
     position: relative;
 }
@@ -37,7 +39,7 @@ html {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 800px;
+    height: 800px; /*sabse bada chutiyapa part 2*/
     overflow: hidden;
 }
 
@@ -57,24 +59,18 @@ html {
 }
 
 .downarrow {
+    color: white;
     animation: bouncing 1s infinite ease-in-out;
     bottom: 50px;
     display: block;
-    height: 50px;
-    width: 50px;
     left: 50%;
     margin-left: -25px;
     position: absolute;
-
+    transition: ease-in-out 0.3s;
 }
 
-.diamonds {
-    left: 0;
-    bottom: 50px;
-    display: block;
-    height: 800px;
-    width: 500px;
-    position: absolute;
+.downarrow:hover{
+    color: #7f8c8d;
 }
 
 .dabba {
@@ -82,8 +78,12 @@ html {
 }
 
 .btn-container {
-    display: flex;
-    position: relative;
+    display: block;
+    height: 100%;
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 5%;
+    
 }
 
 .top-btn {
@@ -115,6 +115,7 @@ html {
     border: 5px solid white;
     transform: rotate(45deg);
     transition: ease-in-out 0.3s;
+    position: relative;
     /* filter: blur(2px); */
 }
 
@@ -133,6 +134,7 @@ html {
     border: 5px solid white;
     transform: rotate(45deg);
     transition: ease-in-out 0.3s;
+    position: relative;
 }
 
 .trap-logo:hover {
@@ -149,11 +151,8 @@ html {
     transform: rotate(-45deg);
 }
 
-.btn-dia {
-    font-size: 1em;
-}
 
-.face:hover {
+.fb:hover {
     color: #3b5998;
 }
 
