@@ -1,36 +1,59 @@
 html {
     scroll-behavior: smooth;
-  }
+}
 
-.slide1{
-    background-image:url(../resources/images/IMG_8472.jpg);
-    background-attachment:fixed;
-    background-position:center; 
-    background-size:cover;
-    height:800px;
-    overflow:hidden;
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    opacity: 0.7;
+    background-color: #fff;
+    z-index: 99;
+    text-align: center;
+ }
+ 
+ #loading-image {
+   position: absolute;
+   top: 100px;
+   left: 240px;
+   z-index: 100;
+ }
+
+.slide1 {
+    background-image: url(../resources/images/IMG_8472.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    overflow: hidden;
     position: relative;
 }
-.slide2{
-    background-image:url(../resources/images/IMG_1306-2.jpg);
-    background-attachment:fixed;
-    background-position:center;
-    background-size:cover;
-    height:800px;
-    overflow:hidden;
+
+.slide2 {
+    background-image: url(../resources/images/IMG_1306-2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    overflow: hidden;
 }
-/* .leftfoot{
-    text-align:left;
-}
-.rightfoot{
-    text-align:right;
-    padding-top:20px;
-} */
+
 
 @keyframes bouncing {
-    0% {bottom: 100px;}
-    50% {bottom: 80px;}
-    100% {bottom: 100px;}
+    0% {
+        bottom: 100px;
+    }
+
+    50% {
+        bottom: 80px;
+    }
+
+    100% {
+        bottom: 100px;
+    }
 }
 
 .downarrow {
@@ -42,10 +65,10 @@ html {
     left: 50%;
     margin-left: -25px;
     position: absolute;
-    
+
 }
 
-.diamonds{
+.diamonds {
     left: 0;
     bottom: 50px;
     display: block;
@@ -54,42 +77,86 @@ html {
     position: absolute;
 }
 
-.dabba{
+.dabba {
     float: right;
 }
 
+.btn-container {
+    display: flex;
+    position: relative;
+}
 
-.top-btn{
+.top-btn {
     font-weight: bold;
     background: transparent;
     color: white;
     border: 5px solid white;
     /* filter: blur(2px); */
     transition: ease-in-out 0.3s;
-    
+
 }
 
-.top-btn:hover{
+.top-btn:hover {
     color: black;
     background: white;
     filter: none;
 }
 
-.btn-span{
+.btn-span {
     float: right;
     padding: 20px;
 }
 
-#insta,#fb{
-    -webkit-filter: blur(20) ;
-    filter: blur(20);
-}
-#insta:hover{
-    -webkit-filter: blur(20) ;
-    filter: invert();
+.social {
+    background: transparent;
+    color: white;
+    height: 100px;
+    width: 100px;
+    border: 5px solid white;
+    transform: rotate(45deg);
+    transition: ease-in-out 0.3s;
+    /* filter: blur(2px); */
 }
 
-#fb:hover{
-    -webkit-filter: blur(20) ;
-    filter: invert();
+.social:hover {
+    color: black;
+    background: white;
+    filter: none;
+}
+
+.trap-logo {
+    background: transparent;
+    text-align: center;
+    color: white;
+    height: 300px;
+    width: 300px;
+    border: 5px solid white;
+    transform: rotate(45deg);
+    transition: ease-in-out 0.3s;
+}
+
+.trap-logo:hover {
+    background: white;
+    color: black;
+    height: 300px;
+    width: 300px;
+    border: 5px solid white;
+    transform: rotate(45deg);
+    transition: ease-in-out 0.3s;
+}
+
+.inside {
+    transform: rotate(-45deg);
+}
+
+.btn-dia {
+    font-size: 1em;
+}
+
+.face:hover {
+    color: #3b5998;
+}
+
+.insta:hover {
+    color: hotpink;
 }

@@ -1,91 +1,115 @@
 <!DOCTYPE html>
 <html>
-    <head>
 
-        <title>
-            PHOTU: A Photography Blog
-        </title>
-        
+<head>
 
-        <!--CSS-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <link rel="stylesheet" href="css/tilt.css">
-        <link rel="stylesheet" type="text/css" href="css/home.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <title>
+    PHOTU: A Photography Blog
+  </title>
 
-    </head>
 
-    <body>
+  <!--CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/tilt.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 
-    <div class="slide1">
+</head>
 
 
 
-      
+<body>
 
-      <span class="btn-span">
-        <button class="top-btn">PRESETS</button>
-        <button class="top-btn">CONTACT</button>
-      </span>
-      <!-- <button class="btn-dia"></button>
-      <button class="btn-dia"></button>
-      <button class="btn-dia"></button> -->
+  <div id="loading">
+    <img id="loading-image" src="resources/icons/41-aperture.gif" alt="Loading..." />
+  </div>
 
-      <img id="diamonds" class="diamonds" src="resources/icons/diamonds_main.svg">
-      <img id="insta" class="diamonds" src="resources/icons/diamonds_upper_insta_white.svg">
-      <img id="fb" class="diamonds" src="resources/icons/diamonds_lower_fb_white.svg">
+  <div class="slide1">
 
-      <a href="#slide2"><img class="downarrow" src="Resources/icons/arrow-down-sign-to-navigate.svg"> </a>
+    <span class="btn-span">
+      <button class="top-btn">PRESETS</button>
+      <button class="top-btn">CONTACT</button>
+    </span>
 
+
+    <div class="btn-container">
+      <button class="social btn-dia face"><span class="fa fa-facebook fa-3x inside"></span></button>
+
+      <button class="trap-logo btn-dia">
+        <h2 class="inside">TRAPERTURE</h2>
+        <h6 class="inside">seize the aperture</h6>
+      </button>
+
+      <button class="social btn-dia insta"><span class="fa fa-instagram fa-3x inside"></span></button>
     </div>
 
+    <a href="#slide2"><span class="fa-angle-down downarrow"></a>
 
-    <div id="slide2" class="slide2">
+  </div>
 
-      <!-- TILT CODE STARTS -->
-      <br>
 
-      <div class="dabba" class="box1">
-        <a data-tilt data-tilt-glare="true" data-tilt-transition="true"  data-tilt-scale="1.1" class="c-logo" href=" " title="Tilt.js demo ">
-          <span>Architecture</span>
-        </a> 
-      </div>
+  <div id="slide2" class="slide2">
 
-          <br>
+    <!-- TILT CODE STARTS -->
+    <br>
 
-      <div class="dabba" class="box2">
-        <a data-tilt data-tilt-glare="true" data-tilt-transition="true"  data-tilt-scale="1.1" class="c-logo" href="grid.html" title="Tilt.js demo ">
-          <span>Macro</span>
-        </a> 
-      </div> 
+    <div class="dabba" class="box1">
+      <a data-tilt data-tilt-glare="true" data-tilt-transition="true" data-tilt-scale="1.1" class="c-logo" href=" "
+        title="Tilt.js demo ">
+        <span>Architecture</span>
+      </a>
+    </div>
 
-        <br>
+    <br>
 
-      <div class="dabba" class="box3">
-        <a data-tilt data-tilt-glare="true" data-tilt-transition="true"  data-tilt-scale="1.1" class="c-logo" href="grid.html" title="Tilt.js demo ">
-          <span>Landscape</span>
-        </a> 
-      </div>
-      
-      <br>
-      
-      <div class="dabba" class="box4">
-        <a data-tilt data-tilt-glare="true" data-tilt-transition="true"  data-tilt-scale="1.1" class="c-logo" href="grid.html" title="Tilt.js demo ">
-          <span><img src="/Users/abhishekashyap/Documents/WT Project/images/Gardening.jpg" height="300px" width="300px"></span>
-        </a> 
-      </div>
-          
-      </div>
-           
-          <!-- TILT CODE ENDS -->
-                
-      </div>
+    <div class="dabba" class="box2">
+      <a data-tilt data-tilt-glare="true" data-tilt-transition="true" data-tilt-scale="1.1" class="c-logo" href="grid.html"
+        title="Tilt.js demo ">
+        <span>Macro</span>
+      </a>
+    </div>
 
-      <!--SCRIPTS-->
-        <script src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
-        <script src="js/smoothscroll.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-        <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/vanilla-tilt.min.js'></script>
-            
-    </body>
+    <br>
+
+    <div class="dabba" class="box3">
+      <a data-tilt data-tilt-glare="true" data-tilt-transition="true" data-tilt-scale="1.1" class="c-logo" href="grid.html"
+        title="Tilt.js demo ">
+        <span>Landscape</span>
+      </a>
+    </div>
+
+    <br>
+
+    <div class="dabba" class="box4">
+      <a data-tilt data-tilt-glare="true" data-tilt-transition="true" data-tilt-scale="1.1" class="c-logo" href="grid.html"
+        title="Tilt.js demo ">
+        <span><img src="/Users/abhishekashyap/Documents/WT Project/images/Gardening.jpg" height="300px" width="300px"></span>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- TILT CODE ENDS -->
+
+  </div>
+
+
+  <!--SCRIPTS-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+          $(window).load(function () {
+            $('#loading').hide();
+          });
+        });
+      </script>
+  <!-- <script src="js/home.js"></script> -->
+  <!-- <script src="js/smoothscroll.js"></script> -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/vanilla-tilt.min.js'></script>
+
+</body>
+
 </html>
