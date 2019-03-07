@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(window).load(function() {
+    $(window).on('load', function(){
         $('#loading').hide();
      });
 });
