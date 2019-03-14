@@ -1,5 +1,11 @@
 html {
     scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE 10+*/
+    scrollbar-width: none; /* Firefox */
+}
+html::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
 }
 
 
@@ -27,11 +33,18 @@ html {
 .slide1 {
     background-image: url(../resources/images/IMG_8472.jpg);
     background-attachment: fixed;
-    background-position: center;
+    background-position: center;  
     background-size: cover;
-    height: 800px; /*sabse bada chutiyapa*/
+    
+    transition: all 1.5s cubic-bezier(0.47, 0, 0.745, 0.715);
+    -webkit-transition: all 1.5s cubic-bezier(0.47, 0, 0.745, 0.715);
+    -ms-transition: all 1.5s cubic-bezier(0.47, 0, 0.745, 0.715);
+ transition-delay: 1s;
+
+    height: 100vh; 
     overflow: hidden;
     position: relative;
+
 }
 
 .slide2 {
@@ -39,7 +52,7 @@ html {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 800px; /*sabse bada chutiyapa part 2*/
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -114,15 +127,29 @@ html {
     width: 100px;
     border: 5px solid white;
     transform: rotate(45deg);
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.5s;
     position: relative;
     /* filter: blur(2px); */
+}
+.fb{
+    transition: ease-in-out 0.5s, transform 1s;
+}
+.fb:hover{
+    transform:rotate(45deg) translate(-10px, -10px);
+}
+
+.insta{
+    transition: ease-in-out 0.5s, transform 1s; 
+}
+.insta:hover{
+    transform:rotate(45deg) translate(10px, 10px);
 }
 
 .social:hover {
     color: black;
     background: white;
     filter: none;
+    
 }
 
 .trap-logo {
@@ -132,19 +159,21 @@ html {
     height: 300px;
     width: 300px;
     border: 5px solid white;
+    
     transform: rotate(45deg);
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.5s, transform 1s;
     position: relative;
 }
 
 .trap-logo:hover {
     background: white;
+   
     color: black;
     height: 300px;
     width: 300px;
     border: 5px solid white;
-    transform: rotate(45deg);
-    transition: ease-in-out 0.3s;
+    transform: rotate(45deg) translate(20px,-20px);
+    /* transition: ease-in-out 0.5s; */
 }
 
 .inside {

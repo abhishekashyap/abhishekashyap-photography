@@ -2,9 +2,15 @@
 <html>
 
 <head>
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>
-    PHOTU: A Photography Blog
+   TRAPERTURE
+
+
+
+
+
+   
   </title>
 
 
@@ -94,13 +100,42 @@
 
     <!-- TILT CODE ENDS -->
 
-  </div>
   
 
 
   <!--SCRIPTS-->
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
+  <script> 
+
+      var bgArr = ["Resources/images/IMG_1306-2.jpg", "Resources/images/IMG_7065.jpeg","Resources/images/IMG_8289.jpg","Resources/images/IMG_8472.jpg","Resources/images/IMG_8737.jpg"]; //and so on...
+      
+var i=0;
+
+// Start the slide show
+window.setInterval("swapBkgnd()", 5000);
+
+function calback(){
+  $(".slide1").css('background-position-y', '0%');
+  console.log("INside Callack");
+}
+function swapBkgnd() {
+ if (i>(bgArr.length-1) ) {
+  i=0
+  $(".slide1").css("background-image", "url("+bgArr[i]+")");
+  
+  
+ }
+ else {
+  $(".slide1").css("background-image", "url("+bgArr[i]+")"); 
+
+  
+ } 
+ i++;
+};
+
+    
+  </script>
   
   <script src="js/home.js"></script>
   <!-- <script src="js/smoothscroll.js"></script> -->
