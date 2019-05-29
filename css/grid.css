@@ -1,4 +1,106 @@
-.cards{
-    height: 50px;
-    width: 30px;
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+.square {
+  float: left;
+  position: relative;
+  width: 30%;
+  padding-bottom: 30%;
+  margin: 1.66%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #7f8c8d;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.square:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.grid{
+    padding: 8vw;
+}
+
+.trap-logo {
+    background: transparent;
+    margin-left: 3vw;
+    margin-top: 4vh;
+    /* text-align: center; */
+    color: #34495e;
+    height: 120px;
+    width: 30%;
+    border: 5px solid #34495e;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.267);
+    position: relative;
+    outline: none;
+  }
+  
+  .trap-logo:hover {
+    background: #34495e;
+    color: white;
+    height: 120px;
+    width: 30%;
+    border: 5px solid #34495e;
+    transition: ease-in-out 0.8s;
+  }
+
+.img_1-1 {
+  background-image: url("../Resources/grid-images/1.jpg");
+}
+.img_1-2 {
+  background-image: url("../Resources/grid-images/2.jpg");
+}
+.img_1-3 {
+  background-image: url("../Resources/grid-images/3.jpg");
+}
+
+.img_2-1 {
+  background-image: url("../Resources/grid-images/4.jpg");
+}
+.img_2-2 {
+  background-image: url("../Resources/grid-images/5.jpg");
+}
+.img_2-3 {
+  background-image: url("../Resources/grid-images/6.jpg");
+}
+
+.img_3-1 {
+  background-image: url("../Resources/grid-images/7.jpg");
+}
+.img_3-2 {
+  background-image: url("../Resources/grid-images/8.jpg");
+}
+.img_3-3 {
+  background-image: url("../Resources/grid-images/9.jpg");
+}
+
+body {
+  font-size: 20px;
+  font-family: "Lato", verdana, sans-serif;
+  color: #fff;
+  text-align: center;
+  background: #ececec;
 }

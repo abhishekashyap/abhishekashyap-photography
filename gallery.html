@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="CSS/gallery.css" />
+    <title> </title>
+  </head>
+
+  <body>
+    <!-- ---LEFT - COLUMN ---- -->
+
+      <div class="col-sm-2 col-md-4 col-lg-2">
+      
+        <button class="trap-logo btn-custom">
+          <h5 class="inside" style="font-size: 18px;">TRAPERTURE</h5>
+          <h6 class="inside" style="font-size:7px;">
+            seize the aperture
+          </h6>
+        </button>
+  <br>
+    <a href="index.html">
+      <button class="social home-btn btn-custom">
+        <span class="fa fa-home fa-2x inside"></span>
+      </button>
+    </a>
+    <br>
+        <a href="https://www.facebook.com">
+          <button class="social fb btn-custom">
+            <span class="fa fa-facebook fa-2x inside"></span>
+          </button>
+        </a>
+    <br>
+        <a href="https://www.instagram.com/abhishekashyap/">
+          <button class="social insta btn-custom">
+            <span class="fa fa-instagram fa-2x inside"></span>
+          </button>
+        </a>
+      </div>
+
+
+    <!-- ---- GALLERY ---- -->
+
+      <div class="col-sm-8 col-md-4 col-lg-8">
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img class="img-responsive" src="Resources/Images/gallery/1.jpg">
+            </div>
+        
+            <div class="item">
+              <img class="img-responsive" src="Resources/Images/gallery/2.jpg">
+            </div>
+        
+            <div class="item">
+              <img class="img-responsive" src="Resources/Images/gallery/3.jpg">
+            </div>
+
+            <div class="item">
+                <img class="img-responsive" src="Resources/Images/gallery/4.jpg">
+              </div>
+          
+            <div class="item">
+              <img class="img-responsive" src="Resources/Images/gallery/5.jpg">
+            </div>
+
+            <div class="item">
+              <img class="img-responsive" src="Resources/Images/gallery/6.jpg">
+            </div>
+        
+            <div class="item">
+              <img class="img-responsive" src="Resources/Images/gallery/7.jpg">
+            </div>
+        
+            <div class="item">
+              <img class="img-responsive" src="Resources/Images/gallery/8.jpg">
+            </div>
+
+            <div class="item">
+              <img class="img-responsive" src="Resources/Images/gallery/9.jpg">
+            </div>
+        
+            <div class="item">
+              <img class="img-responsive" src="Resources/Images/gallery/10.jpg">
+            </div>
+
+            <div class="item">
+              <img class="img-responsive" src="Resources/Images/gallery/11.jpg">
+            </div>
+
+            <div class="item">
+              <img class="img-responsive" src="Resources/Images/gallery/12.jpg">
+            </div>
+
+          </div>
+        </div>
+        <h4>THROUGH THE LENS</h4>
+    </div>
+
+      <!-- ---- RIGHT COLUMN ---- -->
+  
+        <div class="col-sm-2 col-md-4 col-lg-2">
+          <div class="arrow-container" ng-app="">
+            <a href="#myCarousel" data-slide="prev">
+              <img
+                class="prev-arrow arrow"
+                src="Resources/arrow-long.svg"
+                alt="Previous"
+                ng-click="count = count - 1" ng-init="count=1"
+              />
+            </a>
+            <p>{{count}}/12</p>
+            <!-- <span class="counter"></span> -->
+            <a href="#myCarousel" data-slide="next">
+              <img
+                class="next-arrow arrow"
+                src="Resources/arrow-long.svg"
+                alt="next-arrow"
+                ng-click="count = count + 1" ng-init="count=1"
+              />
+            </a>
+        </div>
+
+
+    <!-- ----SCRIPTS---- -->
+    <!-- <script src="jquery-3.3.1.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="JS/gallery.js"></script>
+  </body>
+</html>

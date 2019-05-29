@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="CSS/home.css" />
+    <title> </title>
+  </head>
+
+  <body>
+    <!-- <div class="btn-container"> -->
+    <a href="https://www.facebook.com/">
+      <button class="social fb btn-custom">
+        <span class="fa fa-facebook fa-3x inside"></span>
+      </button>
+    </a>
+
+    <!-- ----NAVBAR---- -->
+    <button class="cst-toggle social cst-nav btn-custom">
+      <span class="fa fa-bars fa-3x inside"></span>
+    </button>
+    <button class="items social cst-nav btn-custom item1" id="home">
+      <span class="fa fa-home fa-3x inside"></span>
+    </button>
+    <a href="grid.html">
+      <button class="items social cst-nav btn-custom item2" id="calendar">
+        <span class="fa fa-calendar fa-3x inside"></span>
+      </button>
+    </a>
+    <button class="items social cst-nav btn-custom item3" id="suitcase">
+      <span class="fa fa-suitcase fa-3x inside"></span>
+    </button>
+    <button class="items social cst-nav btn-custom item4" id="phone">
+      <span class="fa fa-phone fa-3x inside"></span>
+    </button>
+
+    <br />
+
+    <a href="gallery.html">
+      <button class="trap-logo btn-custom">
+        <h2 class="inside" style="font-size: 40px;">TRAPERTURE</h2>
+        <h6 class="inside" style="font-size:15px;text-align: center;">
+          seize the aperture
+        </h6>
+      </button>
+    </a>
+
+    <br />
+    <a href="https://www.instagram.com/abhishekashyap/">
+      <button class="social insta btn-custom">
+        <span class="fa fa-instagram fa-3x inside"></span>
+      </button>
+    </a>
+
+    <!-- </div> -->
+
+    <div class="overlay" id="about-overlay">
+      <span class="aboutUs">
+        <h1 style="font-size:5vw;font-family:Lumos;">About Us</h1>
+      </span>
+
+      <div class="Description">
+        <h1 style="font-family: Lumos;">
+          Here is a little info about us
+        </h1>
+        <hr />
+        <p style="font-family: Mono;">
+          Consequat cupidatat nostrud duis duis aliqua ad irure sit proident
+          aliqua duis dolor nisi commodo. Id nulla ipsum ipsum consequat dolore
+          aute incididunt incididunt laborum reprehenderit excepteur esse enim
+          sit. Nisi nulla ut sint sunt excepteur eiusmod nulla pariatur elit id
+          est qui Lorem ullamco.
+        </p>
+      </div>
+      <div class="AboutSlider"></div>
+      <button class="close-button btn-custom">
+        <span class="fa fa-times"></span>
+      </button>
+    </div>
+
+    <!-- contact us -->
+
+    <div class="overlay" id="form">
+      <div class="cont-contactBtn">
+        <div class="cont-flip">
+          <div class="front">
+            <a href="#" class="btn5 btn-white flip"><button class="btn-custom">Contact Us</button></a>
+          </div>
+          <div class="back">
+            <a href="#" class="close" id="cls"
+              ><span
+                class="glyphicon glyphicon-remove"
+                style="color: black;"
+              ></span
+            ></a>
+            <form class="contact-form" action="">
+              <input class="gutter" type="text" placeholder="Your Name" />
+              <input type="text" placeholder="Company Name" />
+              <input class="gutter" type="text" placeholder="Phone Number" />
+              <input type="text" placeholder="Email ID" />
+              <textarea name="" id="" placeholder="Leave a message"></textarea>
+              <input type="submit" value="Send" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of contact us -->
+
+    <!-- ----SCRIPTS---- -->
+    <script src="jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="JS/home.js"></script>
+  </body>
+</html>

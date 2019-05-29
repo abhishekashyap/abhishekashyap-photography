@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  background-color: #ecf0f1;
+  font-family: 'Poppins', sans-serif;
+}
+
+.img-responsive{
+  margin-top: 10vh;
+}
+
+.counter{
+  display: inline-block;
+}
+
+.next-arrow {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+
+.arrow {
+  height: 14vh;
+}
+
+.arrow-container{
+  position: relative;
+  top: 30vh;
+  text-align: center;
+  padding: 1vw;
+}
+
+
+/* carousel fade */
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/* BUTTONS */
+
+.home-btn{
+  margin-top: 9vh !important;
+}
+
+.social {
+  background: transparent;
+  color: #34495e;
+  margin-left: 5.3vw;
+  margin-top: 5vh;
+  height: 60px;
+  width: 60px;
+  border: 5px solid #34495e;
+  transform: rotate(45deg);
+  position: relative;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.267);
+  /* filter: blur(2px); */
+}
+
+.fb:hover {
+  transform: rotate(45deg);
+}
+
+.insta:hover {
+  transform: rotate(45deg);
+}
+
+.social:hover {
+  color: black;
+  background: #34495e;
+  transition: ease-in-out 0.6s;
+}
+
+.trap-logo {
+  background: transparent;
+  margin-left: 3vw;
+  margin-top: 10vh;
+  /* text-align: center; */
+  color: #34495e;
+  height: 120px;
+  width: 120px;
+  border: 5px solid #34495e;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.267);
+  transform: rotate(45deg);
+  position: relative;
+  outline: none;
+}
+
+.trap-logo:hover {
+  background: #34495e;
+  color: white;
+  height: 120px;
+  width: 120px;
+  border: 5px solid #34495e;
+  transform: rotate(45deg);
+  transition: ease-in-out 0.8s;
+}
+
+.inside {
+  transform: rotate(-45deg);
+  /* text-shadow: 10px 10px 10px black; */
+}
+
+.home-btn:hover{
+  color: white;
+}
+
+.fb:hover {
+  color: #3b5998;
+}
+
+.insta:hover {
+  color: hotpink;
+}
+
+/* FOR DIFFERENTIATING GRIDS - TEMP */
+.col-lg-2{
+  /* background-color: #3498db; */
+  height: 100vh; 
+  align-content: center; 
+}
+
+.col-lg-8{
+  /* background-color: #f1c40f; */
+  height: 100vh;
+}
