@@ -5,3 +5,5 @@ Phtography portfolio using:-
 3. Bootstrap
 4. jQuery
 5. AngularJS
+
+Not complete, currently working on responsive design.
